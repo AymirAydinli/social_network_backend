@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - "main"
-      -"another_branch"
   pull_request:
     branches:
       - "main"
-      - "another_branch"
 
 jobs:
   job1:
@@ -18,4 +16,3 @@ jobs:
         uses: actions/checkout@v2
       - name: say hi to Aymir
         run: echo "Hi Aymirr"
-      
