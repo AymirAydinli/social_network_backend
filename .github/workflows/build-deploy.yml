@@ -15,7 +15,7 @@ jobs:
       - name: pulling git repo
         uses: actions/checkout@v2
       - name: Install python
-        uses: actions/setup-python@5.1.1
+        uses: actions/setup-python@5
         with:
           python-version: "3.9"
       - name: upgrade pip version
