@@ -14,5 +14,11 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
-      - name: say hi to Aymir
-        run: echo "Hi Aymirr"
+      - name: Install python
+        uses: actions/setup-python@5.1.1
+        with:
+          python-version: "3.9"
+      - name: upgrade pip version
+        run: python -m pip install --upgrade pip
+      - name: Install all the dependecies
+        run: pip install -r requirements.txt
