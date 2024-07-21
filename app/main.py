@@ -34,4 +34,4 @@ app.add_middleware(
 
 @app.get("/")
 def get():
-    return {"data": "works"}
+    return {"message": "Hello World"}
